@@ -132,7 +132,7 @@ class AsciidoctorTask extends DefaultTask {
 
                         if (isFoPub) {
                             File workingDir = new File("${outputDir}/$backend/work")
-                            fopub.renderPdf(file, workingDir, destinationParentDir)
+                            fopub.renderPdf(file, workingDir, destinationParentDir, fopubOptions)
                         }
                     }
                 } else {
